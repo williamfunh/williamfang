@@ -1,0 +1,18 @@
+/* 强制重置表格显示方式 */
+.markdown-body table {
+  display: table !important;  /* 覆盖block设置 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: auto !important;    /* 覆盖100%宽度 */
+}
+
+/* 确保单元格内容居中 */
+.markdown-body th,
+.markdown-body td {
+  text-align: center !important;
+}
+
+/* 防止表格被包裹元素影响 */
+.markdown-body > table {
+  margin: 1rem auto !important;
+}
